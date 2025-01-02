@@ -29,30 +29,30 @@
 /* Hide folder icons in the bookmarks toolbar */
 @media (-moz-bool-pref: "uc.bookmarks.hide-folder-icons") {
     .bookmark-item[container="true"] .toolbarbutton-icon {
-        display: none;
+      display: none;
     }
-}
-
+  }
+  
 /* Hide favicons in the bookmarks toolbar */
 @media (-moz-bool-pref: "uc.bookmarks.hide-favicons") {
     .bookmark-item:not([container]) .toolbarbutton-icon {
         display: none;
     }
 }
-
+  
 /* Hide bookmark labels */
 @media (-moz-bool-pref: "uc.bookmarks.hide-name") {
     #personal-bookmarks .bookmark-item:not([container]) .toolbarbutton-text {
         display: none !important;
     }
 }
-
+   
 @media (not (-moz-bool-pref: "uc.bookmarks.transparent")) {
     #PersonalToolbar:not([customizing]) {
         background-color: var(--zen-colors-tertiary) !important;
     }
 }
-
+  
 @media (-moz-bool-pref: "uc.bookmarks.transparent") {
     #personal-bookmarks toolbarbutton.bookmark-item {
         background-color: var(--zen-colors-tertiary) !important;
@@ -70,7 +70,7 @@
         filter: brightness(3)
     }
 }
-
+  
 @media (-moz-bool-pref: "uc.bookmarks.expand-on-search") or (-moz-bool-pref: "uc.bookmarks.expand-on-hover") {
     #PersonalToolbar[collapsed="false"]:not([customizing]) {
         position: relative;
@@ -81,7 +81,7 @@
         z-index: 1;
     }
 }
-
+    
 /* Expand the bookmarks toolbar by hovering */
 @media (-moz-bool-pref: "uc.bookmarks.expand-on-hover") {
     #zen-appcontent-navbar-container:hover {
@@ -90,10 +90,11 @@
         }
     }
 }
-
+  
 /* Expand the bookmarks toolbar when you search */
 @media (-moz-bool-pref: "uc.bookmarks.expand-on-search") {
     #nav-bar:focus-within + #PersonalToolbar{
         transform: rotateX(0deg) !important;
     }
 }
+  
