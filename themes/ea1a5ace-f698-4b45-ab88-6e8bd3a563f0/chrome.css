@@ -9,6 +9,7 @@
 :root:has(#theme-Bookmark-Toolbar-Tweaks[uc-bookmarks-position-toolbar="center"]) {
     #PlacesToolbarItems {
         justify-content: center;
+        direction: ltr;
     }
 }
 
