@@ -1,7 +1,7 @@
 [
     {
         "property": "uc.bookmarks.position-toolbar",
-        "label": "Choose toolbar position",
+        "label": "Toolbar position",
         "type": "dropdown",
         "disabledOn": [],
         "options": [
