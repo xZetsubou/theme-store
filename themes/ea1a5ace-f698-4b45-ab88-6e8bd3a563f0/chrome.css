@@ -12,6 +12,13 @@
     }
 }
 
+:root:has(#theme-Bookmark-Toolbar-Tweaks[uc-bookmarks-position-toolbar="centerRtl"]) {
+    #PlacesToolbarItems {
+        justify-content: center;
+        direction: rtl;
+    }
+}
+
 :root:has(#theme-Bookmark-Toolbar-Tweaks[uc-bookmarks-position-toolbar="left"]) {
     #PlacesToolbarItems {
         justify-content: left;

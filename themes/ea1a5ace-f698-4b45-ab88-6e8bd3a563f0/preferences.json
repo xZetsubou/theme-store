@@ -10,6 +10,10 @@
                 "value": "center"
             },
             {
+                "label": "Centered (Right to left)",
+                "value": "centerRtl"
+            },
+            {
                 "label": "Left to right",
                 "value": "left"
             },
