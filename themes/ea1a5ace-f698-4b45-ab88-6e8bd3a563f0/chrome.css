@@ -5,31 +5,22 @@
     background-size: cover !important; 
 }
 
-/* Positioning bookmarks toolbar */
-:root:has(#theme-Bookmark-Toolbar-Tweaks[uc-bookmarks-position-toolbar="center"]) {
+/* Center the bookmarks toolbar */
+@media (-moz-bool-pref: "uc.bookmarks.center-toolbar") {
     #PlacesToolbarItems {
         justify-content: center;
-        direction: ltr;
     }
 }
 
-:root:has(#theme-Bookmark-Toolbar-Tweaks[uc-bookmarks-position-toolbar="centerRtl"]) {
-    #PlacesToolbarItems {
-        justify-content: center;
-        direction: rtl;
-    }
-}
-
+/* Positioning bookmarks toolbar direction */
 :root:has(#theme-Bookmark-Toolbar-Tweaks[uc-bookmarks-position-toolbar="left"]) {
     #PlacesToolbarItems {
-        justify-content: left;
         direction: ltr;
     }
 }
 
 :root:has(#theme-Bookmark-Toolbar-Tweaks[uc-bookmarks-position-toolbar="right"]) {
     #PlacesToolbarItems {
-        justify-content: right;
         direction: rtl;
     }
 }
