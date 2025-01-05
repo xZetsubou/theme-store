@@ -7,7 +7,7 @@
     },
     {
         "property": "uc.bookmarks.position-toolbar",
-        "label": "Toolbar Direction",
+        "label": "Bookmarks toolbar direction",
         "type": "dropdown",
         "disabledOn": [],
         "options": [
